@@ -124,7 +124,7 @@ header {
 }
 .sites {
     box-sizing: border-box;
-    background: rgb(255,150,0);
+    background: rgba(255,150,0,0.75);
     float: left;
     margin: auto;
     padding: 10px;
