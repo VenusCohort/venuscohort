@@ -4,18 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VenusCohort</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="stars"></div>
   <div id="stars2"></div>
   <div id="stars3"></div>
-  <div id="venus"></div>
-  <div id="title">
-    <span>
-      <h1>Doc&nbsp;Rob</h1><h3>&amp;</h3><h5>The&nbsp;Dirty&nbsp;Venutians</h5>
-    </span>
+  <div class="content">
+    <div id="venus"></div>
+    <div id="title"><span><h1>Doc&nbsp;Rob</h1><h3>&amp;</h3><h5>The&nbsp;Dirty&nbsp;Venutians</h5></span></div>
+    <div class="hidden">
+      <header>
+        <h1>VenusCohort.com</h1>
+      </header>
+      <div class="right">
+          <input id="input" type="text" name="search" placeholder="Search">
+          <button id="search">Search</button>
+      </div>
+    </div>
+    <div class="main" id="app">
+      
+    </div>
   </div>
+<script type="text/javascript">
+  const main = document.getElementById('app');
+const input = document.querySelector("#input");
+const search = document.querySelector("#search");
+input.addEventListener("input", () => console.log(input.value));
+search.addEventListener("click", (e) => {
+    e.preventDefualt;
+    let user = input.value;
+    console.log(user);
+  });
+    const url = `https://api.github.com/orgs/VenusCohort/repos`;
+    fetch(url).then(response => response.json()).then(data => {
+            for (let i = 0; i <= data.length - 1; i++){
+              if (data[i].name === "venuscohort"){
+                continue;
+              }
+              else {
+                main.innerHTML += 
+                `
+                <div class="sites">
+                <a href="https://${data[i].name}.venuscohort.com" class="links">${data[i].name}.venuscohort.com</a>
+                </div
+                `
+              }
+            }
+         });
+</script>
 </body>
 </html>
