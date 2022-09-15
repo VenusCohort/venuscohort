@@ -11,7 +11,7 @@ html {
     position: relative;
     left: calc(85vw - 290px);
     top: calc(5vh + 20px);
-    background: url(Venus.webp);
+    background: url(../images/Venus.webp);
     border-radius: 50%;
     background-size: 610px;
     transform: rotate(177deg);
