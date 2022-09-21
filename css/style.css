@@ -168,7 +168,7 @@ header {
     float: left;
     margin: auto;
     padding: 10px;
-    width: 90%;
+    width: 98%;
     border: 1px solid black;
     height: 10vh;
 }
@@ -201,16 +201,12 @@ header {
     color: #FFF;
     text-align: center;
     font-family: "lato", sans-serif;
-    font-weight: 250;
+    font-weight: 125;
     font-size: 50px;
     letter-spacing: 5px;
     line-height: 15px;
     margin-top: -60px;
     padding-left: 10px;
-  }
-#title span {
-    background: -webkit-linear-gradient(white, #38495a);
-    text-shadow: #f0f0f0 2px;
   }
 }
 /* ----------- iPhone 4 and 4S ----------- */
