@@ -164,7 +164,7 @@ header {
 @media only screen and (max-width: 500px) {
 .sites {
     box-sizing: border-box;
-    background: rgba(255,150,0,0.75);
+    background: rgba(255,150,0,0.65);
     float: left;
     margin: auto;
     padding: 10px;
@@ -172,6 +172,46 @@ header {
     border: 1px solid black;
     height: 10vh;
 }
+    #venus {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: calc(50vw);
+    top: calc(5vh);
+    background: url(../images/Venus.webp);
+    border-radius: 50%;
+    background-size: 305px;
+    transform: rotate(177deg);
+    box-shadow: inset 4px 18px 80px 18px rgb(0, 0, 0),
+    inset -6px 0 12px 4px rgba(255, 255, 255, 0.5);
+    animation-name: rotate;
+    animation-duration: 243s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 243s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+  #title {
+    position: relative;
+    top: 25%;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "lato", sans-serif;
+    font-weight: 250;
+    font-size: 50px;
+    letter-spacing: 5px;
+    line-height: 15px;
+    margin-top: -60px;
+    padding-left: 10px;
+  }
+#title span {
+    background: -webkit-linear-gradient(white, #38495a);
+    text-shadow: #f0f0f0 2px;
+  }
 }
 /* ----------- iPhone 4 and 4S ----------- */
 /* Portrait */
